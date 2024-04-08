@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="entrenamiento.html">Entrenamiento</a></li>
+                <li><a href="alimentacion.html">Alimentación</a></li>
+                <li><a href="recetas.html">Recetas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    <main>
+        <h1 class="contactoh1">Contacto</h1>
+        <h2 class="contactoh2">Ingrese sus datos para más información y planes de entrenamiento y alimentación personalizados. <strong>¡Únete al equipo de Salud en Forma y mejora tu calidad de vida!</strong></h2>
+    </main>
+    <section>
+        <form action="enviar.php" method="post" enctype="text/plain">
+            <label for="nombre">Nombre</label><br>
+            <input id="nombre" class="nombre" required type="text" placeholder="Nombre"><input type="text" placeholder="Apellido"><br>
+            <label for="email">Dirección de correo</label><br>
+            <input id="email" required type="email" placeholder="Email"><br>
+            <label for="telefono">Telefono</label><br>
+            <input id="telefono" required type="tel" placeholder="+54 291 1111111"><br>
+            <label for="nacimiento">Fecha de nacimiento</label><br>
+            <input id="nacimiento" required type="date"><br>
+            <label for="">Genero</label><br>
+            <input class="radio" type="radio" name="genero" value="Mujer"><p class="radiop">Mujer</p><br>
+            <input class="radio" type="radio" name="genero" value="Hombre"><p class="radiop">Hombre</p><br>
+            <input class="radio" type="radio" name="genero" value="No Binario"><p class="radiop">No Binario</p><br>
+            <input class="radio ultimo" type="radio" name="genero" value="Otro"><p class="radiop">Otro</p><br>
+            <label for="">Nivel de actividad en su vida actualmente</label><br>
+            <input class="radio" type="radio" name="actividad" value="Alto"><p class="radiop">Alto (5 veces a la semana o más)</p><br>
+            <input class="radio" type="radio" name="actividad" value="Medio"><p class="radiop">Medio (3 veces a la semana)</p><br>
+            <input class="radio ultimo" type="radio" name="actividad" value="Bajo"><p class="radiop">Bajo (1 vez a la semana o menos)</p><br>
+            <label for="comentarios">Comentarios</label><br>
+            <textarea name="areadetexto" id="comentarios" cols="30" rows="10" placeholder="Cuéntanos un poco acerca de las metas que te gustaría alcanzar"></textarea><br>
+            <input class="enviar" type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <p class="foot">Teléfono: +542916487579</p>
+        <p class="foot">Correo: saludenforma@gmail.com</p>
+        <p class="foot">Victoria Staltari</p>
+        <p class="derechos">&copy; 2024 Salud en Forma - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
