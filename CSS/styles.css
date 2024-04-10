@@ -78,6 +78,9 @@ h2.index{
 
 /*MEDIO*/
 
+section{
+    margin-left: 10px;
+}
 h3{
     color:RGB(40, 209, 165);
     font-size: 32px;
@@ -235,6 +238,8 @@ ol.instrucciones{
 div.recetas{
     display: flex;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 span.ingredientes{
     display: inline-block;
