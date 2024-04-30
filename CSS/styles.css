@@ -52,9 +52,7 @@ h1{
     color: white;
     font-weight: bold ;
     font-size: 50px;
-    margin-top: 59px;
-    margin-bottom: 20px;
-    margin-left: 25px;
+    margin: 60px 15px 20px 25px;
 }
 h1.index{
     margin-top: 130px;
@@ -66,7 +64,7 @@ h2{
     color:white;
     font-size: 24px;
     text-indent: 20px;
-    margin-left: 25px;
+    margin: 0 20px;
     font-weight: lighter;
 }
 h2.index{
@@ -247,11 +245,11 @@ p.foot{
     }
     h1.index{
         font-size: 48px;
-        margin: 80px 0 20px 20px;
+        margin: 80px 20px 20px 20px;
     }
     h2.index{
         font-size: 26px;
-        margin: 0 0 15px 15px;
+        margin: 0 15px 15px 15px;
     }
     main.index{
         margin: 0;
