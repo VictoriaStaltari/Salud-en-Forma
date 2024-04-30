@@ -94,8 +94,8 @@ p{
     font-size: 22px;
     text-indent: 20px;
     letter-spacing: 1px;
-    margin-left: 20px; 
-    margin-right: 20px;
+    display: block;
+    margin: auto;
 }
 .intro{
     text-align: center;
@@ -111,14 +111,22 @@ p{
     margin-bottom: 20px;
 }
 .texto{
-    margin-bottom: 20px;
-}
-.p1{
+    padding-bottom: 20px;
     display: block;
-    text-indent: 20px;
-    width: 500px;
     margin: auto;
 }
+.p1{
+    text-indent: 20px;
+    width: 500px;
+}
+
+@media screen and (max-width: 970px) {
+    .p1{
+        width: auto;
+        margin: auto 5px ;
+    }
+}
+
 .p2{
     text-align: center;
     text-indent: 20px;
@@ -126,22 +134,85 @@ p{
 }
 .img1{
     width: 450px;
-    height: 300px;
+    height: auto;
     border-radius: 25px;
-    /* margin: auto; */
-}
-.d2 ul{
-    margin-top: 40px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap ;
+    display: block;
+    margin:auto 5px auto 5px;
 }
 
-.imglink{
-    width: 150px;
-    height: 150px;
-    border-radius: 30px;
+/* ENFOQUE MOBILE FIRST PARA GRID */
+
+#grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 200px ;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas: 
+    "entrenamiento" 
+    "alimentacion" 
+    "recetas" 
+    "contacto";
+    grid-gap: 15px;
+    justify-content: center;
+    align-content: center;
+}
+.grid-item{
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-item a{
+    display: block;
+    color: rgba(0, 0, 0, 0);
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+.grid-item a:hover{
+    transition: 1s ;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+div.entrenamiento{
+    grid-area: entrenamiento;
+    background-image: url(../Imagenes/entrenamiento.jpg);
+}
+.alimentacion{
+    grid-area: alimentacion;
+    background-image: url(../Imagenes/alimentacion0.jpg);
+}
+.recetas{
+    grid-area: recetas;
+    background-image: url(../Imagenes/recetas.jpg);
+}
+.contacto{
+    grid-area: contacto;
+    background-image: url(../Imagenes/contacto.jpeg);
+}
+/* MEDIA QUERIES PARA EL GRID */
+
+@media screen and (min-width: 500px) {
+    #grid{
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px;
+        grid-template-areas: 
+        "entrenamiento alimentacion"
+        "recetas contacto";
+    }
+    
+}
+@media screen and (min-width: 900px) {
+    #grid{
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: 200px;
+        grid-template-areas: 
+        "entrenamiento alimentacion recetas contacto";
+    }
+    
 }
 
 /*FOOTER*/
@@ -162,6 +233,62 @@ p.foot{
     text-align: center;
     margin: 5px 0 15px 0;
 }
+
+/* MEDIAS QUERIES */
+
+@media screen and (max-width: 550px){
+    /* Barra de Navegación */
+    /* Header */
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h1.index{
+        font-size: 48px;
+        margin: 80px 0 20px 20px;
+    }
+    h2.index{
+        font-size: 26px;
+        margin: 0 0 15px 15px;
+    }
+    main.index{
+        margin: 0;
+        padding-bottom: 5px;
+        height: 400px;
+        border-radius: 0 0 30px 30px;
+    }
+    main{
+        margin-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        background-color: RGB(69, 223, 181);
+        border-radius: 0 0 20px 20px;
+        height: 270px;
+    }
+    /* Medio */
+    p{
+        font-size: 18px;
+        text-indent: 10px;
+        letter-spacing: 0.5px;
+    }
+    .img1{
+        width: 300px;
+    }
+    h3{
+        font-size: 26px;
+        margin: 30px 0 15px 0;
+    }
+    /* Footer */
+    .derechos{
+        font-size: 12px;
+    }
+    .foot{
+        font-size: 14px;
+    }
+}
+
 /*OTRAS PÁGINAS*/
 
 /*ENTRENAMIENTO*/
@@ -235,7 +362,7 @@ ul.ingredientes{
 ol.instrucciones{
     font-size: 22px;
 }
-div.recetas{
+div.recetas1{
     display: flex;
     margin-bottom: 20px;
     flex-wrap: wrap;
@@ -247,7 +374,7 @@ span.ingredientes{
     margin-right: auto;
     min-width: 350px;
 }
-.recetas iframe{
+.recetas1 iframe{
     width: 560px;
     height: 315px;
     min-width: 560px;
