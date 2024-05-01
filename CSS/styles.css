@@ -24,29 +24,46 @@ main.index{
     border-radius: 0 0 30px 30px;
 }
 nav{
-    background-color: rgb(116, 116, 116);
-    margin: 0;
-    padding: 20px 0;
+    background-color: rgba(39, 39, 39, 0.9);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 0 0;
     color: white;
     width: 100%;
     position: fixed;
     top: 0;
-
 }
-ul {
-    list-style: none;
+.itemmenu{
     display: flex;
-    margin: 0;
+    flex-direction: column;
+    /* background-color: violet; */
+    justify-content: center;
+    color: red;
 }
-li {
-    margin: auto;
-}
-a{
+i{
+    font-size: 40px;
     color: white;
-    text-decoration: none;
 }
-a:hover{
-    color: RGB(69, 223, 181);
+.nombre-itemmenu{
+    align-self:flex-end ;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0);
+    margin: 0;
+    text-indent: 0;
+}
+.itemmenu:hover i{
+        color: grey;
+        transition: 0.7s;
+    }
+.itemmenu:hover .nombre-itemmenu{
+        color: white;
+        font-size: 16px;
+        transition: 0.5s;
+    }
+a{
+    display: block;
+    margin: auto;
+    text-decoration: none;
 }
 h1{
     color: white;
@@ -77,7 +94,7 @@ h2.index{
 /*MEDIO*/
 
 section{
-    margin-left: 10px;
+    margin: 0 20px;
 }
 h3{
     color:RGB(40, 209, 165);
@@ -103,7 +120,7 @@ p{
 }
 .d1{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: center;
     margin-bottom: 20px;
@@ -111,12 +128,12 @@ p{
 .texto{
     padding-bottom: 20px;
     display: block;
-    margin: auto;
 }
 .p1{
     text-indent: 20px;
     width: 500px;
 }
+/* Ajuste con media queries para este texto específico */
 
 @media screen and (max-width: 970px) {
     .p1{
@@ -135,7 +152,7 @@ p{
     height: auto;
     border-radius: 25px;
     display: block;
-    margin:auto 5px auto 5px;
+    margin:auto 5px auto 10px;
 }
 
 /* ENFOQUE MOBILE FIRST PARA GRID */
@@ -143,16 +160,14 @@ p{
 #grid{
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 200px ;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
     grid-template-areas: 
-    "entrenamiento" 
-    "alimentacion" 
-    "recetas" 
-    "contacto";
-    grid-gap: 15px;
-    justify-content: center;
+    "entrenamiento alimentacion" 
+    "recetas contacto";
+    justify-content: space-evenly;
     align-content: center;
+    grid-row-gap: 10px;
 }
 .grid-item{
     border-radius: 20px;
@@ -200,8 +215,9 @@ div.entrenamiento{
         grid-template-areas: 
         "entrenamiento alimentacion"
         "recetas contacto";
-    }
-    
+        justify-content:space-evenly;
+        grid-row-gap: 30px;
+    }    
 }
 @media screen and (min-width: 900px) {
     #grid{
@@ -209,6 +225,7 @@ div.entrenamiento{
         grid-template-rows: 200px;
         grid-template-areas: 
         "entrenamiento alimentacion recetas contacto";
+        justify-content: space-evenly;
     }
     
 }
@@ -266,6 +283,9 @@ p.foot{
         height: 270px;
     }
     /* Medio */
+    section{
+        margin: 0 10px;
+    }
     p{
         font-size: 18px;
         text-indent: 10px;
