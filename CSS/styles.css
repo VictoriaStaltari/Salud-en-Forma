@@ -12,10 +12,6 @@
     justify-content: center;
     align-items: center;
 }
-.inicio:hover{
-    transition: 1s;
-    filter:saturate(1.4);
-}
 header div{
     border: 2px #fff;
     border-radius: 15px;
@@ -27,7 +23,7 @@ header div{
 h1{
     color: #fff;
     text-align: center;
-    font-size: 30px;
+    font-size: 34px;
 }
 h2{
     color: #fff;
@@ -134,11 +130,10 @@ footer p{
 }
 /* ENTRENAMIENTO */
 /* HEADER */
-.hentrenamiento{
+.titulo{
     margin-bottom: 20px;
     padding: 0;
     height: 300px;
-    background-image: url(../Imagenes/fondo_entrenamiento.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;    
@@ -146,6 +141,12 @@ footer p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.hentrenamiento{
+    background-image: url(../Imagenes/fondo_entrenamiento.jpg);
+}
+.halimentacion{
+    background-image: url(../Imagenes/fondo_alimentacion.jpg);
 }
 ul{
     list-style-type: none;

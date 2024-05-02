@@ -1,243 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alimentación</title>
+    <title>Inicio BOOTSTRAP</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="itemmenu">
-                <a href="../index.html">
-                    <i class="fa-sharp fa-solid fa-house"></i>
-                </a>
-                <p class="nombre-itemmenu"> Inicio</p>
+    <!-- NAVBAR INICIA -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Alimentación</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entrenamiento.html">Entrenamiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recetas.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <div class="itemmenu">
-                <a href="entrenamiento.html">
-                    <i class="fa-sharp fa-solid fa-dumbbell"></i>
-                </a>
-                <p class="nombre-itemmenu"> Entrenamiento</p>
-            </div>
-            <div class="itemmenu">
-                <a href="alimentacion.html">
-                    <i class="fa-sharp fa-solid fa-apple-whole"></i>
-                </a>
-                <p class="nombre-itemmenu"> Alimentación</p> 
-            </div>
-            <div class="itemmenu">
-                <a href="recetas.html">
-                    <i class="fa-sharp fa-solid fa-book"></i>
-                </a>
-                <p class="nombre-itemmenu"> Recetas</p>
-            </div>
-            <div class="itemmenu">
-                <a href="contacto.html">
-                    <i class="fa-sharp fa-solid fa-phone"></i>
-                </a>
-                <p class="nombre-itemmenu"> Contacto</p>
-            </div>
-        </nav>
+        </div>
+    </nav>
+    <!-- NAVBAR FIN -->
+    <!-- TITULO INICIA -->
+    <header class="container-fluid titulo halimentacion">
+        <div class="container ">
+            <h1>Alimentación</h1>
+            <h2>Aprende qué comer para lograr tu objetivo y descubre tu plan de comida completo para 7 días.</h2>
+        </div>
     </header>
-    <main>
-        <h1>Alimentación</h1>
-        <h2>Aprende qué comer para lograr tu objetivo y descubre tu plan de comida completo para 7 días.</h2>
-    </main>
+    <!-- TITULO FIN -->
     <section>
         <p>En esta sección, exploraremos la importancia de una alimentación saludable y cómo puede contribuir a alcanzar tus objetivos de fitness y bienestar. Hablaremos sobre la relación entre la nutrición y el rendimiento físico, así como los beneficios de seguir un plan de comida equilibrado y personalizado. Además, destacaremos la influencia de la alimentación en el rendimiento deportivo y el bienestar general, subrayando cómo las elecciones alimentarias pueden marcar la diferencia en la consecución de los objetivos de fitness.</p>
-        <h3>Cómo comer según tu objetivo</h3>
-        <h4>Pérdida de Peso</h4>
+        <h3 class="color4">Cómo comer según tu objetivo</h3>
+        <h4 class="color3">Pérdida de Peso</h4>
         <p>Un enfoque cuidadosamente diseñado para crear un déficit calórico, favoreciendo la pérdida de grasa corporal de manera sostenible. Se destacará la importancia de mantener una ingesta calórica controlada, priorizando alimentos nutritivos y bajos en calorías.</p>
         <p>Las comidas deben incluir una combinación equilibrada de proteínas magras, carbohidratos complejos, grasas saludables y una variedad de vegetales. Se recomienda dividir el plato en aproximadamente 50% de vegetales, 25% de proteínas, 25% de carbohidratos y una pequeña cantidad de grasas saludables.</p>
-        <table>
-            <tr>
-                <th class="nada">  </th>
-                <th>Desayuno</th>
-                <th>Almuerzo</th>
-                <th>Cena</th>
-                <th>Snack</th>
-            </tr>
-            <tr>
-                <th>Día 1</th>
-                <td>Batido de espinacas, plátano y leche de almendras.</td>
-                <td>Ensalada de pollo a la parrilla con vegetales mixtos y aderezo </td>
-                <td>Salmón al horno con espárragos y quinoa.</td>
-                <td>Yogur griego natural con frutas frescas.</td>
-            </tr>
-            <tr>
-                <th>Día 2</th>
-                <td>Tostadas integrales con aguacate y huevo pochado.</td>
-                <td>Sopa de verduras casera con una porción de pan integral.</td>
-                <td>Pechuga de pollo al curry con arroz integral y brócoli al vapor.</td>
-                <td>Palitos de zanahoria con hummus.</td>
-            </tr>
-            <tr>
-                <th>Día 3</th>
-                <td>Batido de proteínas con bayas mixtas y espinacas.</td>
-                <td>Ensalada de atún con mezcla de verduras y aderezo de limón.</td>
-                <td>Pavo al horno con batata asada y espárragos.</td>
-                <td>Batido de proteínas con leche de almendras.</td>
-            </tr>
-            <tr>
-                <th>Día 4</th>
-                <td>Avena con manzana rallada y canela.</td>
-                <td>Rollitos de lechuga con pollo desmenuzado y aguacate.</td>
-                <td>Salmón a la parrilla con ensalada de espinacas y nueces.</td>
-                <td>Yogur griego con rodajas de pepino.</td>
-            </tr>
-            <tr>
-                <th>Día 5</th>
-                <td>Tortilla de claras de huevo con espinacas y tomate.</td>
-                <td>Sopa de pollo y verduras con una porción de pan integral.</td>
-                <td>Filete de pescado al horno con quinoa y espárragos.</td>
-                <td>Rodajas de pepino con hummus.</td>
-            </tr>
-            <tr>
-                <th>Día 6</th>
-                <td>Batido de proteínas con plátano y mantequilla de almendras.</td>
-                <td>Ensalada de salmón ahumado con mezcla de hojas verdes y vinagreta de limón.</td>
-                <td>Pollo al curry con verduras salteadas y arroz integral.</td>
-                <td>Batido de proteínas con leche de almendras.</td>
-            </tr>
-            <tr>
-                <th>Día 7</th>
-                <td>Tostadas integrales con aguacate y huevo revuelto.</td>
-                <td>Ensalada de garbanzos con tomate, pepino y aderezo de vinagreta.</td>
-                <td>Salmón al horno con espárragos y quinoa.</td>
-                <td>Rodajas de manzana con mantequilla de almendras.</td>
-            </tr>
-        </table>
-        <h4>Ganancia de Masa Muscular</h4>
+        <h4 class="color2">Ganancia de Masa Muscular</h4>
         <p>Un enfoque nutricional diseñado para apoyar el crecimiento y la reparación muscular, con un énfasis en la ingesta adecuada de calorías y proteínas. Se resaltará la importancia de consumir una variedad de alimentos ricos en nutrientes para promover la síntesis muscular y maximizar los resultados del entrenamiento de fuerza.</p>
         <p>Las comidas deben incluir una cantidad suficiente de proteínas para apoyar la síntesis muscular, así como carbohidratos para proporcionar energía y grasas saludables para el mantenimiento de las funciones corporales.  Se recomienda dividir el plato en aproximadamente 40% de proteínas, 40% de carbohidratos, 20% de grasas saludables y una porción adicional de vegetales.</p>
-        <table>
-            <tr>
-                <th class="nada">  </th>
-                <th>Desayuno</th>
-                <th>Almuerzo</th>
-                <th>Cena</th>
-                <th>Snack</th>
-            </tr>
-            <tr>
-                <th>Día 1</th>
-                <td>Batido de proteínas con plátano, mantequilla de cacahuate y leche de almendras.</td>
-                <td>Filete de ternera a la parrilla con batata asada y espárragos.</td>
-                <td>Salmón al horno con quinoa y ensalada de aguacate y tomate.</td>
-                <td>Batido de proteínas con leche de almendras.</td>
-            </tr>
-            <tr>
-                <th>Día 2</th>
-                <td>Tortilla de claras de huevo con espinacas y tomate.</td>
-                <td>Pechuga de pollo al horno con arroz integral y brócoli.</td>
-                <td>Filete de salmón al horno con puré de boniato y espárragos.</td>
-                <td>Yogur griego con granola y frutos secos.</td>
-            </tr>
-            <tr>
-                <th>Día 3</th>
-                <td>Batido de proteínas con bayas mixtas y espinacas.</td>
-                <td>Filete de pavo a la parrilla con quinoa y verduras al vapor.</td>
-                <td>Pechuga de pollo a la plancha con arroz integral y brócoli.</td>
-                <td>Batido de proteínas con leche de almendras.</td>
-            </tr>
-            <tr>
-                <th>Día 4</th>
-                <td>Avena con plátano en rodajas y almendras trituradas.</td>
-                <td>Salmón a la parrilla con batata asada y espárragos.</td>
-                <td>Pechuga de pollo al curry con arroz integral y verduras salteadas.</td>
-                <td>Batido de proteínas con plátano y leche de almendras.</td>
-            </tr>
-            <tr>
-                <th>Día 5</th>
-                <td>Tortilla de claras de huevo con espinacas y queso feta</td>
-                <td>Filete de ternera a la plancha con puré de boniato y espárragos.</td>
-                <td> Salmón al horno con quinoa y ensalada de aguacate y tomate.</td>
-                <td>Yogur griego con nueces y miel.</td>
-            </tr>
-            <tr>
-                <th>Día 6</th>
-                <td> Batido de proteínas con plátano, mantequilla de almendras y leche de almendras.</td>
-                <td>Pechuga de pollo al curry con arroz integral y brócoli.</td>
-                <td>Filete de pavo a la parrilla con puré de boniato y espárragos.</td>
-                <td>Batido de proteínas con leche de almendras.</td>
-            </tr>
-            <tr>
-                <th>Día 7</th>
-                <td>Tostadas integrales con aguacate y huevo pochado.</td>
-                <td>Pechuga de pollo a la parrilla con quinoa y ensalada de espinacas y tomate.</td>
-                <td>Salmón al horno con batata asada y espárragos.</td>
-                <td>Batido de proteínas con plátano y leche de almendras.</td>
-            </tr>
-        </table>
-        <h4>Mantenimiento</h4>
+        <h4 class="color1">Mantenimiento</h4>
         <p>Un enfoque equilibrado diseñado para mantener el peso corporal actual y la composición corporal a largo plazo. Se enfatizará la importancia de adoptar hábitos alimenticios saludables y sostenibles que puedan mantenerse a lo largo del tiempo, sin necesidad de restricciones extremas o dietas draconianas.</p>
         <p>Las comidas deben centrarse en la moderación y la variedad, incluyendo una combinación de proteínas magras, carbohidratos complejos, grasas saludables y una abundancia de vegetales. Se puede seguir una guía de plato saludable, dividiendo el plato en aproximadamente 50% de vegetales, 25% de proteínas y 25% de carbohidratos, con una pequeña cantidad de grasas saludables.</p>
-        <table>
-            <tr>
-                <th class="nada">  </th>
-                <th>Desayuno</th>
-                <th>Almuerzo</th>
-                <th>Cena</th>
-                <th>Snacks</th>
-            </tr>
-            <tr>
-                <th>Día 1</th>
-                <td>Avena con frutas frescas y almendras.</td>
-                <td>Ensalada de pollo a la parrilla con una variedad de vegetales y aderezo ligero.</td>
-                <td>Salmón al horno con quinoa y espárragos.</td>
-                <td>Yogur griego natural con un puñado de nueces.</td>
-            </tr>
-            <tr>
-                <th>Día 2</th>
-                <td>Tostadas integrales con aguacate y huevo revuelto.</td>
-                <td>Sopa de lentejas con una porción de pan integral.</td>
-                <td>Pechuga de pollo al curry con arroz integral y brócoli al vapor.</td>
-                <td>Batido de proteínas con leche de almendras.</td>
-            </tr>
-            <tr>
-                <th>Día 3</th>
-                <td>Batido de proteínas con bayas mixtas y espinacas.</td>
-                <td>Ensalada de garbanzos con tomate, pepino y aderezo de vinagreta.</td>
-                <td>Salmón al horno con espárragos y quinoa.</td>
-                <td>Palitos de zanahoria con hummus.</td>
-            </tr>
-            <tr>
-                <th>Día 4</th>
-                <td>Tortilla de claras de huevo con espinacas y tomate.</td>
-                <td>Ensalada de atún con una variedad de verduras y vinagreta balsámica.</td>
-                <td>Pechuga de pollo a la plancha con batata asada y espárragos.</td>
-                <td>Yogur griego con miel y almendras.</td>
-            </tr>
-            <tr>
-                <th>Día 5</th>
-                <td>Avena con plátano en rodajas y almendras trituradas.</td>
-                <td>Rollitos de lechuga con pollo desmenuzado, aguacate y salsa de yogur.</td>
-                <td>Salmón a la parrilla con ensalada de espinacas y nueces.</td>
-                <td>Rodajas de manzana con mantequilla de almendras.</td>
-            </tr>
-            <tr>
-                <th>Día 6</th>
-                <td>Batido de proteínas con plátano, mantequilla de cacahuate y leche de almendras.</td>
-                <td>Pechuga de pollo al curry con arroz integral y brócoli al vapor.</td>
-                <td>Pechuga de pollo al curry con arroz integral y brócoli al vapor.</td>
-                <td>Yogur griego con granola y frutas frescas.</td>
-            </tr>
-            <tr>
-                <th>Día 7</th>
-                <td>Tostadas integrales con aguacate y tomate en rodajas.</td>
-                <td>Sopa de verduras casera con una porción de pan integral.</td>
-                <td>Salmón al horno con batata asada y espárragos.</td>
-                <td>Batido de proteínas con leche de almendras.</td>
-            </tr>
-        </table>
     </section>
-    <footer>
-        <p class="foot">Teléfono: +542916487579</p>
-        <p class="foot">Correo: saludenforma@gmail.com</p>
-        <p class="foot">Victoria Staltari</p>
-        <p class="derechos">&copy; 2024 Salud en Forma - Todos los derechos reservados</p>
+    <footer class="container-fluid bg-dark text-light">
+        <p>Teléfono: +542916487579</p>
+        <p>Correo: saludenforma@gmail.com</p>
+        <p>Victoria Staltari</p>
+        <p>&copy; 2024 Salud en Forma - Todos los derechos reservados</p>
     </footer>
+    <!--INICIO SCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- FIN SRIPT BOOTSTRAP -->
 </body>
 </html>
