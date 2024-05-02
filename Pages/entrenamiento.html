@@ -1,149 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="../CSS/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/stylesbs.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrenamiento</title>
+    <title>Inicio BOOTSTRAP</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="itemmenu">
-                <a href="../index.html">
-                    <i class="fa-sharp fa-solid fa-house"></i>
-                </a>
-                <p class="nombre-itemmenu"> Inicio</p>
+    <!-- NAVBAR INICIA -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Entrenamiento</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../indexbs.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Alimentación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <div class="itemmenu">
-                <a href="entrenamiento.html">
-                    <i class="fa-sharp fa-solid fa-dumbbell"></i>
-                </a>
-                <p class="nombre-itemmenu"> Entrenamiento</p>
-            </div>
-            <div class="itemmenu">
-                <a href="alimentacion.html">
-                    <i class="fa-sharp fa-solid fa-apple-whole"></i>
-                </a>
-                <p class="nombre-itemmenu"> Alimentación</p> 
-            </div>
-            <div class="itemmenu">
-                <a href="recetas.html">
-                    <i class="fa-sharp fa-solid fa-book"></i>
-                </a>
-                <p class="nombre-itemmenu"> Recetas</p>
-            </div>
-            <div class="itemmenu">
-                <a href="contacto.html">
-                    <i class="fa-sharp fa-solid fa-phone"></i>
-                </a>
-                <p class="nombre-itemmenu"> Contacto</p>
-            </div>
-        </nav>
+        </div>
+    </nav>
+    <!-- NAVBAR FIN -->
+    <header class="container-fluid hentrenamiento">
+        <!-- TITULO INICIA -->
+        <div class="container">
+            <h1>Entrenamiento</h1>
+            <h2>Desafía tus límites y alcanza tu mejor versión con nuestros planes de entrenamiento</h2>
+        </div>
+        <!-- TITULO FIN -->
     </header>
-    <main>
-        <h1>Entrenamiento</h1>
-        <h2><strong>Desafía tus límites y alcanza tu mejor versión con nuestros planes de entrenamiento</strong></h2>
-    </main>
     <section>
-        <p class="intro">Descubre el poder transformador del entrenamiento físico, una oportunidad para desafiar tus límites, fortalecer tu cuerpo y liberar tu potencial. Más allá de levantar pesas o correr kilómetros, el entrenamiento es un compromiso contigo mismo para mejorar tu salud y bienestar, aumentar tu confianza y reducir el estrés. Prepárate para iniciar este viaje hacia un nuevo y mejorado tú, donde cada repetición te acerca más a tus metas y sueños.</p>
-        <h3>Pérdida de Peso</h3>
-        <p class="">El objetivo principal de este plan de entrenamiento es maximizar la quema de calorías y la pérdida de grasa para ayudarte a alcanzar tu meta de pérdida de peso. Para lograrlo, nos centraremos en ejercicios que involucren grandes grupos musculares y que aumenten la frecuencia cardíaca, lo que estimulará tu metabolismo y promoverá la pérdida de peso de manera efectiva.</p>
-        <h4>Plan de Entrenamiento en el Gimnasio</h4>
-        <h5 class="entrenamiento">Entrenamiento de Fuerza</h5>
-        <ul class="entrenamiento">
+        <p>Descubre el poder transformador del entrenamiento físico, una oportunidad para desafiar tus límites, fortalecer tu cuerpo y liberar tu potencial. Más allá de levantar pesas o correr kilómetros, el entrenamiento es un compromiso contigo mismo para mejorar tu salud y bienestar, aumentar tu confianza y reducir el estrés. Prepárate para iniciar este viaje hacia un nuevo y mejorado tú, donde cada repetición te acerca más a tus metas y sueños.</p>
+        <!-- PERDIDA DE PESO INICIA -->
+        <h3 class="container-fluid color2">Pérdida de Peso</h3>
+        <p>El objetivo principal de este plan de entrenamiento es maximizar la quema de calorías y la pérdida de grasa para ayudarte a alcanzar tu meta de pérdida de peso. Para lograrlo, nos centraremos en ejercicios que involucren grandes grupos musculares y que aumenten la frecuencia cardíaca, lo que estimulará tu metabolismo y promoverá la pérdida de peso de manera efectiva.</p>
+        <h4 class="container-fluid color1">Plan de Entrenamiento en el Gimnasio</h4>
+        <h5>Entrenamiento de Fuerza</h5>
+        <ul>
             <li>Sentadillas: 3 series x 12 repeticiones. Trabaja los cuádriceps, glúteos y músculos del core.</li>
             <li>Press de Banca: 3 series x 12 repeticiones. Trabaja el pecho, hombros y tríceps.</li>
             <li>Peso Muerto: 3 series x 12 repeticiones. Trabaja la espalda baja, los glúteos y los músculos de la cadena posterior.</li>
             <li>Pull-Ups (dominadas) o Lat Pulldown: 3 series x 12 repeticiones. Trabaja la espalda y los bíceps.</li>
             <li>Plancha: 3 series x 30 segundos. Trabaja el core.</li>
         </ul>
-        <h5 class="entrenamiento">Entrenamiento Cardiovascular</h5>
-        <ul class="entrenamiento">
+        <h5>Entrenamiento Cardiovascular</h5>
+        <ul>
             <li>Correr en la cinta: 30 minutos a ritmo moderado.</li>
             <li>Elíptica: 20 minutos alternando entre resistencia baja y alta intensidad.</li>
             <li>Máquina de remo: 15 minutos a ritmo constante.</li>
         </ul>
-        <h4>Plan de Entrenamiento en Casa</h4>
-        <h5 class="entrenamiento">Entrenamiento de Cuerpo Completo</h5>
-        <ul class="entrenamiento">
+        <h4 class="container-fluid color1">Plan de Entrenamiento en Casa</h4>
+        <h5>Entrenamiento de Cuerpo Completo</h5>
+        <ul>
             <li>Máquina de remo: 15 minutos a ritmo constante.</li>
             <li>Flexiones de pecho: 3 series x 12 repeticiones.</li>
             <li>Zancadas: 3 series x 12 repeticiones (cada pierna).</li>
             <li>Plancha: 3 series x 30 segundos.</li>
             <li>Crunches: 3 series x 15 repeticiones.</li>
         </ul>
-        <h5 class="entrenamiento">Entrenamiento Cardiovascular</h5>
-        <ul class="entrenamiento">
+        <h5>Entrenamiento Cardiovascular</h5>
+        <ul>
             <li>Saltos de cuerda: 5 minutos.</li>
             <li>Burpees: 3 series x 10 repeticiones.</li>
             <li>Mountain climbers: 3 series x 20 repeticiones (cada pierna).</li>
             <li>High knees: 3 series x 30 segundos.</li>
             <li>Jumping jacks: 3 series x 20 repeticiones.</li>
         </ul>
-        <h3>Ganancia de Masa Muscular</h3>
+        <!-- PERDIDA DE PESO FIN -->
+        <!-- GANANCIA MM INICIA -->
+        <h3 class="container-fluid color2">Ganancia de Masa Muscular</h3>
         <p>El objetivo principal de este plan de entrenamiento es estimular el crecimiento muscular a través de ejercicios de fuerza y ​​hipertrofia. Para lograrlo, nos enfocaremos en trabajar diferentes grupos musculares con ejercicios específicos diseñados para promover el desarrollo muscular y la fuerza.</p>
-        <h4>Plan de Entrenamiento en el Gimnasio</h4>
-        <h5 class="entrenamiento">Entrenamiento de Pecho y Tríceps</h5>
-        <ul class="entrenamiento">
+        <h4 class="container-fluid color1">Plan de Entrenamiento en el Gimnasio</h4>
+        <h5>Entrenamiento de Pecho y Tríceps</h5>
+        <ul>
             <li>Press de Banca: 4 series x 8-10 repeticiones.</li>
             <li>Fondos en Paralelas: 3 series x 10-12 repeticiones.</li>
             <li>Press de Tríceps con Barra: 3 series x 10-12 repeticiones.</li>
             <li>Extensiones de Tríceps con Polea Alta: 3 series x 12-15 repeticiones.</li>
         </ul>
-        <h5 class="entrenamiento">Entrenamiento de Espalda y Bíceps</h5>
-        <ul class="entrenamiento">
+        <h5>Entrenamiento de Espalda y Bíceps</h5>
+        <ul>
             <li>Dominadas o Pull-Ups: 4 series x 8-10 repeticiones.</li>
             <li>Remo con Barra: 3 series x 10-12 repeticiones.</li>
             <li>Curl de Bíceps con Barra: 3 series x 10-12 repeticiones.</li>
             <li>Curl de Martillo con Mancuernas: 3 series x 12-15 repeticiones.</li>
         </ul>
-        <h5 class="entrenamiento">Entrenamientode Piernas</h5>
-        <ul class="entrenamiento">
+        <h5>Entrenamientode Piernas</h5>
+        <ul>
             <li>Sentadillas: 4 series x 10-12 repeticiones.</li>
             <li>Prensa de Piernas: 3 series x 10-12 repeticiones.</li>
             <li>Extensiones de Cuádriceps: 3 series x 12-15 repeticiones.</li>
             <li>Elevaciones de Talones: 3 series x 15-20 repeticiones.</li>
         </ul>
-        <h4>Plan de Entrenamiento en Casa</h4>
-        <h5 class="entrenamiento">Entrenamiento de Piernas</h5>
-        <ul class="entrenamiento">
+        <h4 class="container-fluid color1">Plan de Entrenamiento en Casa</h4>
+        <h5>Entrenamiento de Piernas</h5>
+        <ul>
             <li>Sentadillas: 4 series x 12-15 repeticiones.</li>
             <li>Zancadas: 3 series x 10-12 repeticiones (cada pierna).</li>
             <li>Elevación de Talones: 3 series x 15-20 repeticiones.</li>
             <li>Puente de Glúteos: 3 series x 15-20 repeticiones.</li>
         </ul>
-        <h5 class="entrenamiento">Entrenamiento de Espalda y Bíceps</h5>
-        <ul class="entrenamiento">
+        <h5>Entrenamiento de Espalda y Bíceps</h5>
+        <ul>
             <li>Dominadas en Barra Horizontal: 4 series x 8-10 repeticiones.</li>
             <li>Remo con Mochila (usando libros o botellas de agua): 3 series x 10-12 repeticiones.</li>
             <li>Curl de Bíceps con Mochila: 3 series x 10-12 repeticiones.</li>
             <li>Curl de Martillo con Mochila: 3 series x 12-15 repeticiones.</li>
         </ul>
-        <h5 class="entrenamiento">Entrenamiento de Pecho y Tríceps</h5>
-        <ul class="entrenamiento">
+        <h5>Entrenamiento de Pecho y Tríceps</h5>
+        <ul>
             <li>Flexiones de Pecho: 4 series x 10-12 repeticiones.</li>
             <li>Fondos entre Sillas (para tríceps): 3 series x 10-12 repeticiones.</li>
             <li>Press de Tríceps con Mancuernas: 3 series x 10-12 repeticiones.</li>
             <li>Extensiones de Tríceps en el Suelo (skull crushers) con Mancuernas: 3 series x 12-15 repeticiones.</li>
         </ul>
-        <h3>Música</h3>
+        <!-- GANANCIA MM FIN -->
+        <h3 class="container-fluid color4">Música</h3>
         <p>Además te dejamos estos 6 playlist de música moivadora para que elijas el que más te guste y lo disfrutes mientras entrenas.</p>
-        <div class="musica">
-            <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0fkHLYh3rNOZGzeKk1mERy?utm_source=generator" width="260" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3yNVuEECUpqsOShanftMSG?utm_source=generator" width="260" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/75KGwJSDXmbg5VakZqBWwi?utm_source=generator&theme=0" width="260" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWYK2yx0OW9Kj?utm_source=generator" width="260" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2Bf6iQ1P7GuKD29lT0sCSn?utm_source=generator" width="260" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2QWsRsNenk8LLnwtymgLir?utm_source=generator" width="260" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <!-- IFRAME SPOTIFY INICIA -->
+        <div class="row">
+            <div class="col-sm-6 col-md-4 spotify">
+                <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0fkHLYh3rNOZGzeKk1mERy?utm_source=generator" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="col-sm-6 col-md-4 spotify">
+                <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3yNVuEECUpqsOShanftMSG?utm_source=generator" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="col-sm-6 col-md-4 spotify">
+                <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/75KGwJSDXmbg5VakZqBWwi?utm_source=generator&theme=0" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="col-sm-6 col-md-4 spotify">
+                <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWYK2yx0OW9Kj?utm_source=generator" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="col-sm-6 col-md-4 spotify">
+                <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2Bf6iQ1P7GuKD29lT0sCSn?utm_source=generator" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="col-sm-6 col-md-4 spotify">
+                <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2QWsRsNenk8LLnwtymgLir?utm_source=generator" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
         </div>
+        <!-- IFRAME SPOTIFY FIN -->
     </section>
-    <footer>
-        <p class="foot">Teléfono: +542916487579</p>
-        <p class="foot">Correo: saludenforma@gmail.com</p>
-        <p class="foot">Victoria Staltari</p>
-        <p class="derechos">&copy; 2024 Salud en Forma - Todos los derechos reservados</p>
+    <footer class="container-fluid bg-dark text-light">
+        <p>Teléfono: +542916487579</p>
+        <p>Correo: saludenforma@gmail.com</p>
+        <p>Victoria Staltari</p>
+        <p>&copy; 2024 Salud en Forma - Todos los derechos reservados</p>
     </footer>
+    <!--INICIO SCRIPT BOOTSTRAP -->
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- FIN SRIPT BOOTSTRAP -->
 </body>
 </html>

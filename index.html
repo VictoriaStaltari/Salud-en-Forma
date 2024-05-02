@@ -1,77 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/stylesbs.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Inicio BOOTSTRAP</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="itemmenu">
-                <a href="index.html">
-                    <i class="fa-sharp fa-solid fa-house"></i>
-                </a>
-                <p class="nombre-itemmenu"> Inicio</p>
+    <!-- NAVBAR INICIA -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pages/entrenamientobs.html">Entrenamiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Alimentación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <div class="itemmenu">
-                <a href="Pages/entrenamiento.html">
-                    <i class="fa-sharp fa-solid fa-dumbbell"></i>
-                </a>
-                <p class="nombre-itemmenu"> Entrenamiento</p>
-            </div>
-            <div class="itemmenu">
-                <a href="Pages/alimentacion.html">
-                    <i class="fa-sharp fa-solid fa-apple-whole"></i>
-                </a>
-                <p class="nombre-itemmenu"> Alimentación</p> 
-            </div>
-            <div class="itemmenu">
-                <a href="Pages/recetas.html">
-                    <i class="fa-sharp fa-solid fa-book"></i>
-                </a>
-                <p class="nombre-itemmenu"> Recetas</p>
-            </div>
-            <div class="itemmenu">
-                <a href="Pages/contacto.html">
-                    <i class="fa-sharp fa-solid fa-phone"></i>
-                </a>
-                <p class="nombre-itemmenu"> Contacto</p>
-            </div>
-        </nav>
+        </div>
+    </nav>
+    <!-- NAVBAR FIN -->
+    <!-- TITULO INICIA -->
+    <header class="container-fluid inicio">
+        <div class="container">
+            <h1>Salud en Forma</h1>
+            <h2>Descubre una vida más saludable a través del ejercicio y la alimentación.</h2>
+        </div>
     </header>
-    <main class="index">
-        <h1 class="index">Salud en Forma</h1>
-        <h2 class="index">Descubre una vida más saludable a través del ejercicio y la alimentación.</h2>
+    <!-- TITULO FIN -->
+    <!-- INTRO INICIA -->
+    <main>
+        <div class="row">
+            <p>Bienvenido a Salud en Forma, tu recurso definitivo para alcanzar un estilo de vida saludable y activo. En esta plataforma, nos dedicamos a proporcionar información valiosa y práctica sobre cómo mejorar tu bienestar físico y mental mediante una combinación equilibrada de ejercicio y alimentación.</p>
+        </div>
     </main>
+    <!-- INTRO FIN -->
+    <!-- SECTION INICIA -->
     <section>
-        <p class="intro">Bienvenido a Salud en Forma, tu recurso definitivo para alcanzar un estilo de vida saludable y activo. En esta plataforma, nos dedicamos a proporcionar información valiosa y práctica sobre cómo mejorar tu bienestar físico y mental mediante una combinación equilibrada de ejercicio y alimentación.</p>
-        <h3>Importancia del ejercicio y la alimentación balanceada</h3>
-        <div class="d1">
-            <div class="texto">
+        <h3 class="container-fluid color1">Importancia del ejercicio y la alimentación balanceada</h3>
+        <div class="row">
+            <div class="col-lg-5 col-10 offset-1">
                 <p class="p1">En el mundo actual, donde las demandas diarias pueden ser abrumadoras, es fundamental cuidar de nuestra salud física y mental. El ejercicio regular no solo fortalece nuestros músculos y mejora nuestra resistencia, sino que también libera endorfinas, neurotransmisores que nos hacen sentir bien, reduciendo el estrés y la ansiedad.</p>
                 <p class="p1">Por otro lado, la alimentación juega un papel crucial en nuestro bienestar general. Consumir una dieta equilibrada y nutritiva proporciona a nuestro cuerpo los nutrientes necesarios para funcionar correctamente, fortaleciendo nuestro sistema inmunológico y promoviendo la salud cardiovascular y cerebral.</p>
             </div>
-            <img class="img1" src="Imagenes/personas_saludables.jpg" alt="Personas felices después de ejercitar">
+            <div class="col-lg-4 col-10 offset-1 dimg1">
+                <img class="img1" src="Imagenes/personas_saludables.jpg" alt="Personas felices después de ejercitar">
+            </div>
         </div>
-        <h3>Objetivos del sitio web y cómo puede beneficiarte</h3>
-        <p class="p2">En Salud en Forma, nuestro principal objetivo es proporcionarte las herramientas y recursos necesarios para que puedas alcanzar tus metas de salud y estado físico de manera efectiva y sostenible. Ya sea que desees perder peso, ganar masa muscular, mejorar tu resistencia o simplemente adoptar hábitos más saludables, estamos aquí para ayudarte en cada paso del camino. Nuestro sitio web ofrece una amplia gama de contenido, incluyendo planes de entrenamiento personalizados, planes de alimentación saludable, recetas nutritivas, consejos de estilo de vida y mucho más. Además, nuestra comunidad en línea te brindará apoyo, motivación y la inspiración que necesitas para alcanzar tus objetivos.</p>
-        <h3>Explora nuestras secciones disponibles</h3>
-        <p class="p2">Te invitamos a explorar las diferentes secciones de nuestro sitio web para encontrar la información que mejor se adapte a tus necesidades y preferencias. Desde planes de entrenamiento diseñados específicamente para diferentes objetivos hasta recetas deliciosas y consejos prácticos, estamos seguros de que encontrarás todo lo que necesitas para comenzar tu viaje hacia una vida más saludable y activa. En Salud en Forma, creemos que cada pequeño paso hacia una vida más saludable cuenta. <strong>¡Únete a nosotros hoy y comienza tu viaje hacia un futuro más saludable y feliz!</strong></p>
-        <div id="grid" class="d2">
-            <div class="grid-item entrenamiento"><a href="Pages/entrenamiento.html">Entrenamiento</a></div>
-            <div class="grid-item alimentacion"><a href="Pages/alimentacion.html">Alimentación</a></div>
-            <div class="grid-item recetas"><a href="Pages/recetas.html">Recetas</a></div>
-            <div class="grid-item contacto"><a href="Pages/contacto.html">Contacto</a></div>
+        <h3 class="container-fluid color2">Objetivos del sitio web y cómo puede beneficiarte</h3>
+        <p>En Salud en Forma, nuestro principal objetivo es proporcionarte las herramientas y recursos necesarios para que puedas alcanzar tus metas de salud y estado físico de manera efectiva y sostenible. Ya sea que desees perder peso, ganar masa muscular, mejorar tu resistencia o simplemente adoptar hábitos más saludables, estamos aquí para ayudarte en cada paso del camino. Nuestro sitio web ofrece una amplia gama de contenido, incluyendo planes de entrenamiento personalizados, planes de alimentación saludable, recetas nutritivas, consejos de estilo de vida y mucho más. Además, nuestra comunidad en línea te brindará apoyo, motivación y la inspiración que necesitas para alcanzar tus objetivos.</p>
+        <h3 class="container-fluid color3">Explora nuestras secciones disponibles</h3>
+        <p>Te invitamos a explorar las diferentes secciones de nuestro sitio web para encontrar la información que mejor se adapte a tus necesidades y preferencias. Desde planes de entrenamiento diseñados específicamente para diferentes objetivos hasta recetas deliciosas y consejos prácticos, estamos seguros de que encontrarás todo lo que necesitas para comenzar tu viaje hacia una vida más saludable y activa. En Salud en Forma, creemos que cada pequeño paso hacia una vida más saludable cuenta. <strong>¡Únete a nosotros hoy y comienza tu viaje hacia un futuro más saludable y feliz!</strong></p>
+        <!-- MENU IMAGENES INICIA -->
+        <div class="row menu">
+            <span class="col-lg-3 col-sm-6">
+                <div class="col-8 offset-2 menu__img entrenamiento">
+                    <a href="Pages/entrenamientobs.html">Entrenamiento</a>
+                </div>
+            </span>
+            <span class="col-lg-3 col-sm-6">
+                <div class="col-8 offset-2 menu__img alimentacion">
+                    <a href="Pages/alimentacion.html">Alimentación</a>
+                </div>
+            </span>
+            <span class="col-lg-3 col-sm-6">
+                <div class="col-8 offset-2 menu__img recetas">
+                    <a href="Pages/recetas.html">Recetas</a>
+                </div>
+            </span>
+            <span class="col-lg-3 col-sm-6">
+                <div class="col-8 offset-2 menu__img contacto">
+                    <a href="Pages/contacto.html">Contacto</a>
+                </div>
+            </span>
         </div>
+        <!-- MENU IMAGENES FIN -->
     </section>
-    <footer>
-        <p class="foot">Teléfono: +542916487579</p>
-        <p class="foot">Correo: saludenforma@gmail.com</p>
-        <p class="foot">Victoria Staltari</p>
-        <p class="derechos">&copy; 2024 Salud en Forma - Todos los derechos reservados</p>
+    <!-- SECTION FIN -->
+    <footer class="container-fluid bg-dark text-light">
+        <p>Teléfono: +542916487579</p>
+        <p>Correo: saludenforma@gmail.com</p>
+        <p>Victoria Staltari</p>
+        <p>&copy; 2024 Salud en Forma - Todos los derechos reservados</p>
     </footer>
+    <!--INICIO SCRIPT BOOTSTRAP -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- FIN SRIPT BOOTSTRAP -->
 </body>
 </html>

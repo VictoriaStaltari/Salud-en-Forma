@@ -1,465 +1,159 @@
-/*COMPUTADORA*/
-
-body{
-    margin: 0;
-    color: rgb(90, 90, 90);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/*HEADER*/
-
-main{
-    margin-bottom: 30px;
-    padding-top: 30px;
-    padding-bottom: 15px;
-    background-color: RGB(69, 223, 181);
-    border-radius: 0 0 20px 20px;
-    height: 270px;
-}
-main.index{
-    margin: 0;
-    padding-bottom: 10px;
-    height: 450px;
-    border-radius: 0 0 30px 30px;
-}
-nav{
-    background-color: rgba(39, 39, 39, 0.9);
+/* HEADER */
+.inicio{
+    margin-bottom: 20px;
+    padding: 0;
+    height: 400px;
+    background-image: url(../Imagenes/fondo_index.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    padding: 10px 0 0 0;
-    color: white;
-    width: 100%;
-    position: fixed;
-    top: 0;
-}
-.itemmenu{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    color: red;
+    align-items: center;
 }
-i{
-    font-size: 40px;
-    color: white;
+.inicio:hover{
+    transition: 1s;
+    filter:saturate(1.4);
 }
-.nombre-itemmenu{
-    align-self:flex-end ;
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0);
+header div{
+    border: 2px #fff;
+    border-radius: 15px;
     margin: 0;
-    text-indent: 0;
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.itemmenu:hover i{
-        color: grey;
-        transition: 0.7s;
-    }
-.itemmenu:hover .nombre-itemmenu{
-        color: white;
-        font-size: 16px;
-        transition: 0.5s;
-    }
-a{
-    display: block;
-    margin: auto;
-    text-decoration: none;
-}
+
+/* SECTION */
 h1{
-    color: white;
-    font-weight: bold ;
-    font-size: 50px;
-    margin: 60px 15px 20px 25px;
-}
-h1.index{
-    margin-top: 130px;
-    margin-left: 40px;
-    margin-bottom: 25px;
-    font-size: 64px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
 }
 h2{
-    color:white;
+    color: #fff;
+    text-align: center;
     font-size: 24px;
-    text-indent: 20px;
-    margin: 0 20px;
-    font-weight: lighter;
-}
-h2.index{
-    margin-left: 40px;
-    text-indent: 5px;
-    font-size: 26px;
-    font-weight: bold;
-}
-
-/*MEDIO*/
-
-section{
-    margin: 0 20px;
 }
 h3{
-    color:RGB(40, 209, 165);
-    font-size: 32px;
     text-align: center;
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    color: #fff;
+    padding: 15px 0;
+    margin: 20px 0;
+    font-size: 28px;
 }
-p{
-    color:rgb(90, 90, 90);
-    font-size: 22px;
-    text-indent: 20px;
-    letter-spacing: 1px;
-    display: block;
-    margin: auto;
-}
-.intro{
+h4{
+    color: #fff;
+    padding: 5px 0;
+    font-size: 26px;
     text-align: center;
-    text-indent: 20px;
-    margin-top: 50px;
-    font-size: 22px;
 }
-.d1{
+h5{
+    color: #1DD3B0;
+    font-size: 24px;
+}
+.color1{
+    background-color: #A1FC22;
+}
+.color2{
+    background-color: #FF6392;
+}
+.color3{
+    background-color: #1DD3B0;
+}
+.color4{
+    background-color: #FFA552;
+}
+.dimg1{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: center;
-    margin-bottom: 20px;
-}
-.texto{
-    padding-bottom: 20px;
-    display: block;
-}
-.p1{
-    text-indent: 20px;
-    width: 500px;
-}
-/* Ajuste con media queries para este texto específico */
-
-@media screen and (max-width: 970px) {
-    .p1{
-        width: auto;
-        margin: auto 5px ;
-    }
-}
-
-.p2{
-    text-align: center;
-    text-indent: 20px;
-
+    align-items: center;
 }
 .img1{
-    width: 450px;
+    border-radius: 20px;
+    max-width: 100%;
     height: auto;
-    border-radius: 25px;
-    display: block;
-    margin:auto 5px auto 10px;
 }
-
-/* ENFOQUE MOBILE FIRST PARA GRID */
-
-#grid{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 150px 150px;
-    grid-template-areas: 
-    "entrenamiento alimentacion" 
-    "recetas contacto";
-    justify-content: space-evenly;
-    align-content: center;
-    grid-row-gap: 10px;
+p{
+    text-indent: 15px;
+    font-size: 18px;
+    margin: 20px 10px;
 }
-.grid-item{
+.p1{
+    margin: 0;
+}
+.menu__img{
+    margin: 10px auto;
+    /* padding-top: 50%; */
     border-radius: 20px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    position:relative ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.grid-item a{
+.menu__img a{
     display: block;
-    color: rgba(0, 0, 0, 0);
-    width: 200px;
-    height: 200px;
+    padding: 45% 0;
+    width: 100%;
     border-radius: 20px;
     text-align: center;
     align-content: center;
+    color: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
 }
-.grid-item a:hover{
+.menu__img a:hover{
     transition: 1s ;
     color: rgb(255, 255, 255);
     font-size: 22px;
     background-color: rgba(0, 0, 0, 0.7);
 }
-div.entrenamiento{
-    grid-area: entrenamiento;
+.entrenamiento{
     background-image: url(../Imagenes/entrenamiento.jpg);
 }
 .alimentacion{
-    grid-area: alimentacion;
     background-image: url(../Imagenes/alimentacion0.jpg);
 }
 .recetas{
-    grid-area: recetas;
     background-image: url(../Imagenes/recetas.jpg);
 }
 .contacto{
-    grid-area: contacto;
     background-image: url(../Imagenes/contacto.jpeg);
 }
-/* MEDIA QUERIES PARA EL GRID */
-
-@media screen and (min-width: 500px) {
-    #grid{
-        grid-template-columns: 200px 200px;
-        grid-template-rows: 200px 200px;
-        grid-template-areas: 
-        "entrenamiento alimentacion"
-        "recetas contacto";
-        justify-content:space-evenly;
-        grid-row-gap: 30px;
-    }    
-}
-@media screen and (min-width: 900px) {
-    #grid{
-        grid-template-columns: 200px 200px 200px 200px;
-        grid-template-rows: 200px;
-        grid-template-areas: 
-        "entrenamiento alimentacion recetas contacto";
-        justify-content: space-evenly;
-    }
-    
-}
-
-/*FOOTER*/
-
+/* FOOTER */
 footer{
-    background-color: RGB(69, 223, 181);
-    margin: 30px 0 0 0;
-    padding: 20px 0 5px 0;
-}
-p.derechos{
-    color: white;
-    font-size: 14px;
-    padding-top: 25px;
-}
-p.foot{
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    margin: 5px 0 15px 0;
-}
-
-/* MEDIAS QUERIES */
-
-@media screen and (max-width: 550px){
-    /* Barra de Navegación */
-    i{
-        font-size: 30px;
-    }
-    .nombre-itemmenu{
-        font-size: 8px;
-    }
-    .itemmenu:hover .nombre-itemmenu{
-        font-size: 14px;
-    }
-    /* Header */
-    h1{
-        font-size: 36px;
-    }
-    h2{
-        font-size: 24px;
-    }
-    h1.index{
-        font-size: 48px;
-        margin: 80px 20px 20px 20px;
-    }
-    h2.index{
-        font-size: 26px;
-        margin: 0 15px 15px 15px;
-    }
-    main.index{
-        margin: 0;
-        padding-bottom: 5px;
-        height: 400px;
-        border-radius: 0 0 30px 30px;
-    }
-    main{
-        margin-bottom: 20px;
-        padding-top: 30px;
-        padding-bottom: 15px;
-        background-color: RGB(69, 223, 181);
-        border-radius: 0 0 20px 20px;
-        height: 270px;
-    }
-    /* Medio */
-    section{
-        margin: 0 10px;
-    }
-    p{
-        font-size: 18px;
-        text-indent: 10px;
-        letter-spacing: 0.5px;
-    }
-    .img1{
-        width: 280px;
-    }
-    h3{
-        font-size: 26px;
-        margin: 30px 0 15px 0;
-    }
-    /* Footer */
-    .derechos{
-        font-size: 12px;
-    }
-    .foot{
-        font-size: 14px;
-    }
-}
-
-/*OTRAS PÁGINAS*/
-
-/*ENTRENAMIENTO*/
-
-ul.entrenamiento{
-    display: inline-block;
-    list-style:disc;
-    font-size: 22px;
-}
-h5.entrenamiento{
-    text-align: left;
-    text-indent: 10px;
-}
-iframe.spotify{
-    margin: 20px;
-}
-.musica {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-/*ALIMENTACION*/
-
-table{
-    border: 2px;
-    border-color: rgb(90, 90, 90);
-    border-style:solid;
-    font-size: 22px;
-}
-
-.nada{
-    background-color: rgb(255, 255, 255);
-}
-th{
-    color: RGB(40, 209, 165);
-}
-td{
-    font-size: 18px;
-    padding: 10px;
-}
-
-/*RECETAS*/
-ul.indice{
-    font-size: 22px;
-    font-weight: bold;
-}
-h4{
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 0;
-    margin-left: 15px;
-}
-h5{
-    text-align: center;
-    font-size: 26px;
-    color: RGB(40, 209, 165);
-    margin: 40px 0 25px 0;
-}
-h6{
-    font-size: 22px;
-    margin: 0 0 10px 0;
-}
-ul.ingredientes{
-    display: inline-block;
-    list-style:disc;
-    font-size: 22px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-ol.instrucciones{
-    font-size: 22px;
-}
-div.recetas1{
-    display: flex;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 10px;
 }
-span.ingredientes{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 350px;
-}
-.recetas1 iframe{
-    width: 560px;
-    height: 315px;
-    min-width: 560px;
-    margin-left: 15px;
-}
-.centrado{
-    display: block;
-    margin: 0 auto;
-}
-
-/*CONTACTO*/
-
-.contactoh1{
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-.contactoh2{
-    font-weight: lighter;
-    text-indent: 20px;
-}
-form{
-    margin-bottom: 60px;
-}
-label{
-    color: rgb(100, 100, 100);
-    font-weight: bold;
-    font-size: 22px;
-}
-input{
-    margin-bottom: 40px;
-    width: 300px;
-    height: 25px;
-}
-input.nombre{
-    margin-right: 10px;
-}
-input.radio{
-    margin-bottom: 20px;
-    width: 30px;
-    height: 20px;
-}
-input.ultimo{
-    margin-bottom: 40px;
-}
-.radiop{
-    display: inline;
-    font-size: 20px;
-}
-textarea{
-    width: 500px;
-    margin-bottom: 40px;
-}
-.enviar{
-    width: 200px;
-    height: 40px;
+footer p{
     font-size: 16px;
-    font-weight: bold;
-    background-color: RGB(40, 209, 165);
-    color: white;
-    border: none;
-    margin-bottom: 0;
 }
-
+/* ENTRENAMIENTO */
+/* HEADER */
+.hentrenamiento{
+    margin-bottom: 20px;
+    padding: 0;
+    height: 300px;
+    background-image: url(../Imagenes/fondo_entrenamiento.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+    font-size: 18px;
+}
+iframe{
+    width: 100%;
+}
+.spotify{
+    padding: 10px 20px;
+}
