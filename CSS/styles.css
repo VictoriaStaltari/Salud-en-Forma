@@ -148,6 +148,12 @@ footer p{
 .halimentacion{
     background-image: url(../Imagenes/fondo_alimentacion.jpg);
 }
+.hrecetas{
+    background-image: url(../Imagenes/fondo_recetas.jpg);
+}
+.hcontacto{
+    background-image: url(../Imagenes/fondo_contacto.jpg);
+}
 ul{
     list-style-type: none;
     font-size: 18px;
