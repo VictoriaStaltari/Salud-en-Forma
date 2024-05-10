@@ -42,30 +42,72 @@
         </div>
     </header>
     <!-- TITULO FIN -->
-    <section>
-        <form action="enviar.php" method="post" enctype="text/plain">
-            <label for="nombre">Nombre</label><br>
-            <input id="nombre" class="nombre" required type="text" placeholder="Nombre"><input type="text" placeholder="Apellido"><br>
-            <label for="email">Dirección de correo</label><br>
-            <input id="email" required type="email" placeholder="Email"><br>
-            <label for="telefono">Telefono</label><br>
-            <input id="telefono" required type="tel" placeholder="+54 291 1111111"><br>
-            <label for="nacimiento">Fecha de nacimiento</label><br>
-            <input id="nacimiento" required type="date"><br>
-            <label for="">Genero</label><br>
-            <input class="radio" type="radio" name="genero" value="Mujer"><p class="radiop">Mujer</p><br>
-            <input class="radio" type="radio" name="genero" value="Hombre"><p class="radiop">Hombre</p><br>
-            <input class="radio" type="radio" name="genero" value="No Binario"><p class="radiop">No Binario</p><br>
-            <input class="radio ultimo" type="radio" name="genero" value="Otro"><p class="radiop">Otro</p><br>
-            <label for="">Nivel de actividad en su vida actualmente</label><br>
-            <input class="radio" type="radio" name="actividad" value="Alto"><p class="radiop">Alto (5 veces a la semana o más)</p><br>
-            <input class="radio" type="radio" name="actividad" value="Medio"><p class="radiop">Medio (3 veces a la semana)</p><br>
-            <input class="radio ultimo" type="radio" name="actividad" value="Bajo"><p class="radiop">Bajo (1 vez a la semana o menos)</p><br>
-            <label for="comentarios">Comentarios</label><br>
-            <textarea name="areadetexto" id="comentarios" cols="30" rows="10" placeholder="Cuéntanos un poco acerca de las metas que te gustaría alcanzar"></textarea><br>
-            <input class="enviar" type="submit" value="Enviar">
+    <div class="container mt-3">
+        <form action="/action_page.php" class="was-validated">
+            <div class="mb-3 mt-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="John" name="nombre" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Por favor ingrese su nombre.</div>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Doe" name="apellido" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Por favor ingrese su apellido.</div>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="apellido" class="form-label">Email</label>
+                <input type="email" class="form-control" id="apellido" placeholder="nombre@ejemplo.com" name="email" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Por favor ingrese un email.</div>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="+54 (11) 111 1111" name="telefono" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Por favor ingrese un número de teléfono.</div>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="fecha" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="fecha" name="nacimiento" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Por favor ingrese su fecha de nacimiento.</div>
+            </div>
+            <label class="form-check-label" for="radio">Género</label>
+            <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="femenino" checked>Femenino
+                <label class="form-check-label" for="radio1"></label>
+            </div>
+            <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="masculino">Masculino
+                <label class="form-check-label" for="radio2"></label>
+            </div>
+            <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" id="radio3" name="optradio" value="no-binario">No Binario
+                <label class="form-check-label" for="radio3"></label>
+            </div>
+            <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="otro">Otro
+                <label class="form-check-label" for="radio4"></label>
+            </div>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Por favor ingrese el género con el que se identifica.</div>
+            <div class="mb-3 mt-3">
+                <label for="comentario" class="form-label">Comentarios</label>
+                <textarea class="form-control" id="comentario" placeholder="Cuéntanos un poco acerca de las metas que te gustaría alcanzar." name="metas" required></textarea>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Por favor complete este campo.</div>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="myCheck"  name="informacion" required>
+                <label class="form-check-label" for="myCheck">Dando click aquí usted esta aceptando que le lleguen mails y mensajes con noticias de la página a la vez que se comunicarán con usted para realizar un plan personalizado</label>
+                <div class="valid-feedback">Aceptado</div>
+                <div class="invalid-feedback">Denegado</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-    </section>
+    </div>
     <footer class="container-fluid bg-dark text-light">
         <p>Teléfono: +542916487579</p>
         <p>Correo: saludenforma@gmail.com</p>
