@@ -52,8 +52,8 @@ header div{
 i{
     font-size: 45px;
     color:  rgba(43, 44, 48, 0.7);
+    transition: 0.5s;
     &:hover{
-        transition: 0.5s;
         font-size: 50px;
         color: rgba(43, 44, 48, 0.5);
     }
@@ -91,10 +91,13 @@ h4{
     padding: 5px 0;
 }
 h5{
-    color: $color3
+    color: $color3;
+    text-align: center;
+    margin-top: 25px;
 }
 h6{
-    color: $color2
+    color: $color2;
+    margin: 1%;
 }
 @each $nombre,$col in $mapacolores{
     .#{$nombre}{
@@ -124,17 +127,17 @@ p{
     @include fondo_img();
     @include centrado();
     a{
+        width: 100%;
+        padding: 45% 0;
+        border-radius: 20px;
         display: block;
         text-align: center;
         align-content: center;
         color: $transparente;
         background-color: $transparente;
         text-decoration: none;
-        width: 100%;
-        padding: 45% 0;
-        border-radius: 20px;
+        transition: 1s ;
         &:hover{
-            transition: 1s ;
             color: white;
             font-size: 22px;
             background-color: rgba(0, 0, 0, 0.7);
@@ -178,13 +181,73 @@ ul{
     font-size: 18px;
 }
 iframe{
-    width: 100%;
-}
-.spotify{
-    padding: 10px 20px;
+    &.spotify{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    &.youtube{
+        border-radius: 10px;
+        // display: block;
+        // margin: auto;
+    }
 }
 
 /* ALIMENTACIÓN */
 table{
     margin:20px 10px;
+}
+
+/* RECETAS */
+.indice{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:576px) {
+    .indice{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.recetas1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    & .ingredientes{
+        @include centrado();
+        flex-direction: column;
+        & ul{
+            text-align: center;
+        }
+    }
+}
+.yt{
+    display: block;
+    margin: auto;
+}
+@media screen and (max-width:576px) {
+    .youtube{
+        width: 400px;
+        height: 225px;
+    }
+}
+@media screen and (max-width:450px) {
+    .youtube{
+        width: 300px;
+        height: 170px;
+    }
+}
+button{
+    & a{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: white;
+        }
+    }
+    &.dropdown-toggle{
+        color: white;
+        &:hover{
+            color: white;
+        }
+    }
 }

@@ -37,9 +37,9 @@ header div {
 i {
   font-size: 45px;
   color: rgba(43, 44, 48, 0.7);
+  transition: 0.5s;
 }
 i:hover {
-  transition: 0.5s;
   font-size: 50px;
   color: rgba(43, 44, 48, 0.5);
 }
@@ -100,10 +100,13 @@ h4 {
 
 h5 {
   color: #1DD3B0;
+  text-align: center;
+  margin-top: 25px;
 }
 
 h6 {
   color: #FF6392;
+  margin: 1%;
 }
 
 .color1 {
@@ -155,18 +158,18 @@ p {
   align-items: center;
 }
 .menu__img a {
+  width: 100%;
+  padding: 45% 0;
+  border-radius: 20px;
   display: block;
   text-align: center;
   align-content: center;
   color: rgba(0, 0, 0, 0);
   background-color: rgba(0, 0, 0, 0);
   text-decoration: none;
-  width: 100%;
-  padding: 45% 0;
-  border-radius: 20px;
+  transition: 1s;
 }
 .menu__img a:hover {
-  transition: 1s;
   color: white;
   font-size: 22px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -238,15 +241,73 @@ ul {
   font-size: 18px;
 }
 
-iframe {
+iframe.spotify {
   width: 100%;
-}
-
-.spotify {
   padding: 10px 20px;
+}
+iframe.youtube {
+  border-radius: 10px;
 }
 
 /* ALIMENTACIÓN */
 table {
   margin: 20px 10px;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/* RECETAS */
+.indice {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+  .indice {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.recetas1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.recetas1 .ingredientes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.recetas1 .ingredientes ul {
+  text-align: center;
+}
+
+.yt {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .youtube {
+    width: 400px;
+    height: 225px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .youtube {
+    width: 300px;
+    height: 170px;
+  }
+}
+button a {
+  color: white;
+  text-decoration: none;
+}
+button a:hover {
+  color: white;
+}
+button.dropdown-toggle {
+  color: white;
+}
+button.dropdown-toggle:hover {
+  color: white;
+}/*# sourceMappingURL=styleS.css.map */
