@@ -1,170 +1,252 @@
+@charset "UTF-8";
+/* VARIABLES */
+/* MIXINS */
 /* HEADER */
-.inicio{
-    margin-bottom: 20px;
-    padding: 0;
-    height: 400px;
-    background-image: url(../Imagenes/fondo_index.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;    
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.inicio {
+  margin-bottom: 20px;
+  padding: 0;
+  height: 400px;
+  background-image: url(../Imagenes/fondo_index.jpg);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-header div{
-    border: 2px #fff;
-    border-radius: 15px;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+
+header div {
+  border: 2px white;
+  border-radius: 15px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* BOTON PARA SUBIR */
+.subir {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  margin: 0 25px 25px 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+i {
+  font-size: 45px;
+  color: rgba(43, 44, 48, 0.7);
+}
+i:hover {
+  transition: 0.5s;
+  font-size: 50px;
+  color: rgba(43, 44, 48, 0.5);
 }
 
 /* SECTION */
-h1{
-    color: #fff;
-    text-align: center;
-    font-size: 34px;
+h1 {
+  color: white;
+  text-align: center;
 }
-h2{
-    color: #fff;
-    text-align: center;
-    font-size: 24px;
+
+h1 {
+  font-size: 34px;
 }
-h3{
-    text-align: center;
-    color: #fff;
-    padding: 15px 0;
-    margin: 20px 0;
-    font-size: 28px;
+
+h2 {
+  color: white;
+  text-align: center;
 }
-h4{
-    color: #fff;
-    padding: 5px 0;
-    font-size: 26px;
-    text-align: center;
+
+h2 {
+  font-size: 24px;
 }
-h5{
-    color: #1DD3B0;
-    font-size: 24px;
+
+h3 {
+  color: white;
+  text-align: center;
 }
-.color1{
-    background-color: #A1FC22;
+
+h4 {
+  color: white;
+  text-align: center;
 }
-.color2{
-    background-color: #FF6392;
+
+h3 {
+  font-size: 28px;
 }
-.color3{
-    background-color: #1DD3B0;
+
+h4 {
+  font-size: 26px;
 }
-.color4{
-    background-color: #FFA552;
+
+h5 {
+  font-size: 24px;
 }
-.dimg1{
-    display: flex;
-    align-items: center;
+
+h6 {
+  font-size: 22px;
 }
-.img1{
-    border-radius: 20px;
-    max-width: 100%;
-    height: auto;
+
+h3 {
+  padding: 15px 0;
+  margin: 20px 0;
 }
-p{
-    text-indent: 15px;
-    font-size: 18px;
-    margin: 20px 10px;
+
+h4 {
+  padding: 5px 0;
 }
-.p1{
-    margin: 0;
+
+h5 {
+  color: #1DD3B0;
 }
-.menu__img{
-    margin: 10px auto;
-    /* padding-top: 50%; */
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    background-size:cover;
-    position:relative ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+h6 {
+  color: #FF6392;
 }
-.menu__img a{
-    display: block;
-    padding: 45% 0;
-    width: 100%;
-    border-radius: 20px;
-    text-align: center;
-    align-content: center;
-    color: rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
-    text-decoration: none;
+
+.color1 {
+  background-color: #A1FC22;
 }
-.menu__img a:hover{
-    transition: 1s ;
-    color: rgb(255, 255, 255);
-    font-size: 22px;
-    background-color: rgba(0, 0, 0, 0.7);
+
+.color2 {
+  background-color: #FF6392;
 }
-.entrenamiento{
-    background-image: url(../Imagenes/entrenamiento.jpg);
+
+.color3 {
+  background-color: #1DD3B0;
 }
-.alimentacion{
-    background-image: url(../Imagenes/alimentacion0.jpg);
+
+.color4 {
+  background-color: #FFA552;
 }
-.recetas{
-    background-image: url(../Imagenes/recetas.jpg);
+
+.dimg1 {
+  display: flex;
+  align-items: center;
 }
-.contacto{
-    background-image: url(../Imagenes/contacto.jpeg);
+
+.img1 {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
 }
+
+p {
+  text-indent: 15px;
+  font-size: 18px;
+  margin: 20px 10px;
+}
+
+.p1 {
+  margin: 0;
+}
+
+.menu__img {
+  margin: 10px auto;
+  border-radius: 20px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__img a {
+  display: block;
+  text-align: center;
+  align-content: center;
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  width: 100%;
+  padding: 45% 0;
+  border-radius: 20px;
+}
+.menu__img a:hover {
+  transition: 1s;
+  color: white;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.entrenamiento {
+  background-image: url(../Imagenes/entrenamiento.jpg);
+}
+
+.alimentacion {
+  background-image: url(../Imagenes/alimentacion.jpg);
+}
+
+.recetas {
+  background-image: url(../Imagenes/recetas.jpg);
+}
+
+.contacto {
+  background-image: url(../Imagenes/contacto.jpg);
+}
+
 /* FOOTER */
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    padding-top: 10px;
+footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-footer p{
-    font-size: 16px;
+footer p {
+  font-size: 16px;
 }
+
+/* OTRAS PÁGINAS */
 /* ENTRENAMIENTO */
 /* HEADER */
-.titulo{
-    margin-bottom: 20px;
-    padding: 0;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;    
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.titulo {
+  margin-bottom: 20px;
+  padding: 0;
+  height: 300px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hentrenamiento{
-    background-image: url(../Imagenes/fondo_entrenamiento.jpg);
+
+.hentrenamiento {
+  background-image: url(../Imagenes/fondo_entrenamiento.jpg);
 }
-.halimentacion{
-    background-image: url(../Imagenes/fondo_alimentacion.jpg);
+
+.halimentacion {
+  background-image: url(../Imagenes/fondo_alimentacion.jpg);
 }
-.hrecetas{
-    background-image: url(../Imagenes/fondo_recetas.jpg);
+
+.hrecetas {
+  background-image: url(../Imagenes/fondo_recetas.jpg);
 }
-.hcontacto{
-    background-image: url(../Imagenes/fondo_contacto.jpg);
+
+.hcontacto {
+  background-image: url(../Imagenes/fondo_contacto.jpg);
 }
-ul{
-    list-style-type: none;
-    font-size: 18px;
+
+ul {
+  list-style-type: none;
+  font-size: 18px;
 }
-iframe{
-    width: 100%;
+
+iframe {
+  width: 100%;
 }
-.spotify{
-    padding: 10px 20px;
+
+.spotify {
+  padding: 10px 20px;
 }
+
 /* ALIMENTACIÓN */
-table{
-    margin:20px 10px;
-}
+table {
+  margin: 20px 10px;
+}/*# sourceMappingURL=styles.css.map */

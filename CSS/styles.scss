@@ -1,0 +1,190 @@
+/* VARIABLES */
+$color1: #A1FC22;
+$color2: #FF6392;
+$color3: #1DD3B0;
+$color4: #FFA552;
+$mapacolores: (color1: $color1,
+    color2: $color2,
+    color3: $color3,
+    color4: $color4,);
+
+$transparente: rgba(0, 0, 0, 0);
+$pags: (entrenamiento, alimentacion, recetas, contacto);
+
+/* MIXINS */
+@mixin fondo_img {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;    
+    background-size: cover;
+}
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HEADER */
+.inicio{
+    margin-bottom: 20px;
+    padding: 0;
+    height: 400px;
+    background-image: url(../Imagenes/fondo_index.jpg);
+    @include fondo_img();
+    @include centrado();
+}
+header div{
+    border: 2px white;
+    border-radius: 15px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* BOTON PARA SUBIR */
+.subir{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    margin: 0 25px 25px 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+} 
+i{
+    font-size: 45px;
+    color:  rgba(43, 44, 48, 0.7);
+    &:hover{
+        transition: 0.5s;
+        font-size: 50px;
+        color: rgba(43, 44, 48, 0.5);
+    }
+}
+
+/* SECTION */
+@for $tit from 1 through 4 {
+    h#{$tit}{
+        color: white;
+        text-align: center;
+    }
+    @if $tit==1 {
+        h1{
+            font-size: 34px;
+        }
+    }
+    @else if $tit==2 {
+        h2{
+            font-size: 24px;
+        }
+    }
+}
+$tamano: 28px;
+@for $tam from 3 through 6{
+    h#{$tam}{
+        font-size: $tamano;
+    }
+    $tamano: calc($tamano - 2px);
+}
+h3{
+    padding: 15px 0;
+    margin: 20px 0;
+}
+h4{
+    padding: 5px 0;
+}
+h5{
+    color: $color3
+}
+h6{
+    color: $color2
+}
+@each $nombre,$col in $mapacolores{
+    .#{$nombre}{
+        background-color: $col;
+    }
+}
+.dimg1{
+    display: flex;
+    align-items: center;
+}
+.img1{
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}
+p{
+    text-indent: 15px;
+    font-size: 18px;
+    margin: 20px 10px;
+}
+.p1{
+    margin: 0;
+}
+.menu__img{
+    margin: 10px auto;
+    border-radius: 20px;
+    @include fondo_img();
+    @include centrado();
+    a{
+        display: block;
+        text-align: center;
+        align-content: center;
+        color: $transparente;
+        background-color: $transparente;
+        text-decoration: none;
+        width: 100%;
+        padding: 45% 0;
+        border-radius: 20px;
+        &:hover{
+            transition: 1s ;
+            color: white;
+            font-size: 22px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+@each $img in $pags {
+    .#{$img}{
+        background-image: url(../Imagenes/#{$img}.jpg);
+    }
+}
+
+/* FOOTER */
+footer{
+    margin-top: 20px;
+    padding-top: 10px;
+    flex-direction: column;
+    @include centrado();
+    p{
+        font-size: 16px;
+    }
+}
+/* OTRAS PÁGINAS */
+
+/* ENTRENAMIENTO */
+/* HEADER */
+.titulo{
+    margin-bottom: 20px;
+    padding: 0;
+    height: 300px;
+    @include fondo_img();
+    @include centrado();
+}
+@each $imghead in $pags{
+    .h#{$imghead}{
+        background-image: url(../Imagenes/fondo_#{$imghead}.jpg);
+    }
+}
+ul{
+    list-style-type: none;
+    font-size: 18px;
+}
+iframe{
+    width: 100%;
+}
+.spotify{
+    padding: 10px 20px;
+}
+
+/* ALIMENTACIÓN */
+table{
+    margin:20px 10px;
+}
