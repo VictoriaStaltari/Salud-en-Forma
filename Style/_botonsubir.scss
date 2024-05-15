@@ -1,0 +1,23 @@
+/* BOTON PARA SUBIR */
+.subir{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    margin: 0 25px 25px 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    & i{
+        font-size: 45px;
+        color:  rgba(43, 44, 48, 0.7);
+        transition: 0.5s;
+    }
+    animation-name: subebaja;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    @keyframes subebaja {
+        50%{
+            scale: 1.1;
+        }
+    }
+}

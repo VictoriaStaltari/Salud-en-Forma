@@ -1,0 +1,7 @@
+1- Incorporé etiquetas meta, description y keywords.
+2- Elegí nombres acordes para los títulos de las páginas.
+3- Agregué texto alterno a las imágenes.
+4- Comprimí las imágenes sin bajar su calidad para un mejor rendimiento de la página.
+5- El contenido de la página esta ordenado, prolijo y sin faltas de ortografía.
+6- Utilicé correctamente las etiquetas de encabezados.
+7- Los archivos que componen las páginas estan correctamente ordenados en carpetas.

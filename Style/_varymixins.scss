@@ -1,0 +1,24 @@
+// VARIABLES
+$color1: #A1FC22;
+$color2: #FF6392;
+$color3: #1DD3B0;
+$color4: #FFA552;
+$mapacolores: (color1: $color1,
+    color2: $color2,
+    color3: $color3,
+    color4: $color4,);
+$transparente: rgba(0, 0, 0, 0);
+$pags: (entrenamiento, alimentacion, recetas, contacto);
+
+// MIXINS
+@mixin fondo_img {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;    
+    background-size: cover;
+}
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* VARIABLES */
-/* MIXINS */
 /* HEADER */
 .inicio {
   margin-bottom: 20px;
@@ -227,7 +225,6 @@ footer p {
 }
 
 /* OTRAS PÁGINAS */
-/* ENTRENAMIENTO */
 /* HEADER */
 .titulo {
   margin-bottom: 20px;
@@ -332,4 +329,4 @@ button.dropdown-toggle {
 }
 button.dropdown-toggle:hover {
   color: white;
-}/*# sourceMappingURL=styleS.css.map */
+}/*# sourceMappingURL=styles.css.map */

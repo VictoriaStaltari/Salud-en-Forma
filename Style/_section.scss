@@ -1,0 +1,90 @@
+/* SECTION */
+@for $tit from 1 through 4 {
+    h#{$tit}{
+        color: white;
+        text-align: center;
+    }
+    @if $tit==1 {
+        h1{
+            font-size: 34px;
+        }
+    }
+    @else if $tit==2 {
+        h2{
+            font-size: 24px;
+        }
+    }
+}
+$tamano: 28px;
+@for $tam from 3 through 6{
+    h#{$tam}{
+        font-size: $tamano;
+    }
+    $tamano: calc($tamano - 2px);
+}
+h3{
+    padding: 15px 0;
+    margin: 20px 0;
+}
+h4{
+    padding: 5px 0;
+}
+h5{
+    color: $color3;
+    text-align: center;
+    margin-top: 25px;
+}
+h6{
+    color: $color2;
+    margin: 1%;
+}
+@each $nombre,$col in $mapacolores{
+    .#{$nombre}{
+        background-color: $col;
+    }
+}
+.dimg1{
+    display: flex;
+    align-items: center;
+}
+.img1{
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}
+p{
+    text-indent: 15px;
+    font-size: 18px;
+    margin: 20px 10px;
+}
+.p1{
+    margin: 0;
+}
+.menu__img{
+    margin: 10px auto;
+    border-radius: 20px;
+    @include fondo_img();
+    @include centrado();
+    a{
+        width: 100%;
+        padding: 45% 0;
+        border-radius: 20px;
+        display: block;
+        text-align: center;
+        align-content: center;
+        color: $transparente;
+        background-color: $transparente;
+        text-decoration: none;
+        transition: 1s ;
+        &:hover{
+            color: white;
+            font-size: 22px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+@each $img in $pags {
+    .#{$img}{
+        background-image: url(../Imagenes/#{$img}.jpg);
+    }
+}
