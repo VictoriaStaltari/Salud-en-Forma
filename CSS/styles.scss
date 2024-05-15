@@ -34,10 +34,29 @@ $pags: (entrenamiento, alimentacion, recetas, contacto);
     @include centrado();
 }
 header div{
-    border: 2px white;
     border-radius: 15px;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.7);
+    animation-name: sacude;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    @keyframes sacude {
+        0%{
+            rotate: -9deg
+        }
+        25%{
+            rotate: 7deg
+        }
+        50%{
+            rotate: -5deg;
+        }
+        75%{
+            rotate: 3deg
+        }
+        100%{
+            rotate: 0deg
+        }
+    }
 }
 /* BOTON PARA SUBIR */
 .subir{
@@ -48,16 +67,20 @@ header div{
     margin: 0 25px 25px 0;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.7);
-} 
-i{
-    font-size: 45px;
-    color:  rgba(43, 44, 48, 0.7);
-    transition: 0.5s;
-    &:hover{
-        font-size: 50px;
-        color: rgba(43, 44, 48, 0.5);
+    & i{
+        font-size: 45px;
+        color:  rgba(43, 44, 48, 0.7);
+        transition: 0.5s;
     }
-}
+    animation-name: subebaja;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    @keyframes subebaja {
+        50%{
+            scale: 1.1;
+        }
+    }
+} 
 
 /* SECTION */
 @for $tit from 1 through 4 {
